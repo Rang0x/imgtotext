@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://cdn.jsdelivr.xyz/gh/naptha/tesseract.js@1.0.10/dist/tesseract.min.js"></script>
+</head>
+<body>
+    <section id="hero">
+        <nav class="navbar bg-black">
+            <div class="container py-2">
+                <a class="navbar-brand">
+                    <img src="img/w-logo.png" class="LogoImg" alt="">
+                </a>
+                <form class="d-flex" role="search">
+                    <a href="#start">
+                        <button class="btn btn-light border-2">Get Started</button>
+                    </a>
+                </form>
+            </div>
+        </nav>
+        <div class="headDiv container text-center d-flex flex-column justify-content-center align-items-center">
+            <h1 class="fw-bolder w-75">Transform Images into Words: Effortlessly Extract Text with Ease!</h1>
+            <h5 class="w-50 mt-1 mb-4">Experience the convenience of effortless text extraction</h5>
+            <a href="#start">
+                <button class="btn btn-outline-light border-2 mt-3">Get Started</button>
+            </a>
+        </div>
+    </section>
+    <section class="fileProcess py-3">
+        <div class="container text-center">
+            <div class="row justify-content-around g-3" id="start">
+                <div class="imgUpload col-md-6">
+                        <div class="d-flex justify-content-center align-items-center ">
+                            <label id="dropArea" for="inputImg">
+                                <input type="file" accept="image/*" id="inputImg" hidden>
+                                <div class="imgView text-center bg-body-secondary d-flex flex-column justify-content-center align-items-center">
+                                    <div class="imgViewContent">
+                                        <img src="img/508-icon.png" alt="upload">
+                                        <h2 class="text-black dragText fs-3 px-5">Drag and drop or click here<br> to upload image</h2>
+                                        <p class="text-black">upload any image from desktop</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                </div>
+                <div class="col-md-1">
+                    <img src="img/right-arrow.png" class="arrowImg" alt="">
+                </div>
+                <div class="col-md-5 textArea position-relative overflow-hidden text-black bg-body-tertiary d-flex justify-content-center align-items-center">
+                        <div class="textExtracted">
+                            <button id="textExtract" class="btn btn-outline-primary border-2 fw-bold">Extract Text!</button>
+                        </div>
+                        <button id="copyBtn" class="btn btn-primary">Copy Text</button>
+                </div>
+            </div>
+            <button class="btn generateNew btn-danger mt-3">Generate New!</button>
+        </div>
+    </section>
+    <section class="shareIt text-center mt-5 pt-5">
+        <h2>Share it with your Friends!</h2>
+        <div class="shareIcons my-3 pt-3">
+            <a href="" class="text-decoration-none">
+                <i class="fa-brands fa-facebook fa-2xl text-white"></i>
+            </a>
+            <a href="" class="mx-3 text-decoration-none">
+                <i class="fa-brands fa-twitter fa-2xl text-white"></i>
+            </a>
+            <a href="" class="text-decoration-none">
+                <i class="fa-brands fa-linkedin fa-2xl text-white"></i>
+            </a>
+        </div>
+        <p class="mt-5">Made with <span>❤️</span> by <a href="https://www.linkedin.com/in/aemadd/" class="text-decoration-none text-white fw-bold">Abdelrahman</a></p>
+    </section>
+    <script src="https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

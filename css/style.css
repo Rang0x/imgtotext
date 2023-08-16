@@ -1,0 +1,59 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../img/Simple\ Shiny.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.headDiv{
+    height: 70vh;
+}
+
+.imgUpload{
+    height: 60vh;
+}
+
+.imgView, .textArea{
+    height: 25rem;
+    border: dashed rgb(171, 171, 211);
+    border-radius: 20px;
+}
+
+.textArea{
+    margin: auto !important;
+}
+
+.imgView{
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 30rem;
+}
+
+.arrowImg{
+    width: 7rem;
+    margin-top: 150px;
+    margin-left: -90px;
+    rotate: -30deg;
+}
+
+#copyBtn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 12px;
+    display: none;
+}
+
+.dropping{
+    border: 3px solid rgb(62, 32, 183);
+    background-color: rgba(255, 255, 255, 0.703) !important;
+    box-shadow: inset 1px 10px 100px rgb(132, 132, 209);
+}
+
