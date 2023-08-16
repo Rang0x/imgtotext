@@ -1,6 +1,6 @@
 @media (300px <= width <= 1000px){
     body{
-        background-color: aquamarine !important;
+        background-color: rgb(223, 237, 232) !important;
     }
 
     .imgView, .textArea {
