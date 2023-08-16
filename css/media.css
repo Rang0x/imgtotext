@@ -11,4 +11,9 @@
     .arrowImg{
         display: none;
     }
+
+    #headerOne{
+        width: 85% !important;
+        font-size: 32px;
+    }
 }
